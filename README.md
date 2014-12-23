@@ -20,7 +20,7 @@ Docker image for scrapyd daemon
 Ports
 =====
 
-* 6800: scrapyd daemon port1
+* 6800: scrapyd daemon port
 
 Env vars:
 =========
