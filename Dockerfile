@@ -7,7 +7,7 @@ RUN  \
     apt-get -y -q install git mercurial curl build-essential && \
     apt-get -y -q install python python-dev python-distribute python-pip && \
     apt-get -y -q install inetutils-ping dnsutils && \
-    apt-get -y -q install libpq-dev libmysqlclient-dev libxml2-dev libxslt1-dev libssl-dev && \
+    apt-get -y -q install libxml2-dev libxslt1-dev libssl-dev && \
     apt-get -y -q install libffi-dev && \
     apt-get clean
 
