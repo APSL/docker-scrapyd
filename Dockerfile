@@ -1,6 +1,8 @@
 FROM apsl/circusbase
 MAINTAINER Edu Herraiz <eherraiz@apsl.net>
 
+VOLUME /data
+
 # Things required for a python/pip environment
 RUN  \
     apt-get update && \
@@ -14,6 +16,7 @@ RUN  \
 # install scrapyd
 RUN pip --no-input install scrapyd==1.0.1
 
+ADD conf/scrapyd.conf /etc/scrapyd/
 ADD circus.d/scrapyd.ini /etc/circus.d/
 
 # scrapyd
